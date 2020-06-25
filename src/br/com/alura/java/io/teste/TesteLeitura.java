@@ -3,7 +3,9 @@ package br.com.alura.java.io.teste;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class TesteLeitura {
 
@@ -12,8 +14,8 @@ public class TesteLeitura {
 		//reader reading character streams
 
 		//fluxo de entrada com arquivo
-		FileInputStream fis = new FileInputStream("lorem.txt"); // criando fluxo concreto com arquivo
-		InputStreamReader isr = new InputStreamReader(fis); //melhorando dados binarios para caracteres
+		InputStream fis = new FileInputStream("lorem.txt"); // criando fluxo concreto com arquivo
+		Reader isr = new InputStreamReader(fis); //melhorando dados binarios para caracteres
 		BufferedReader br = new BufferedReader(isr); //leitura de linha
 		
 		String linha = br.readLine();
