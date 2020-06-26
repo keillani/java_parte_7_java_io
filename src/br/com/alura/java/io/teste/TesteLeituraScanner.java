@@ -12,7 +12,7 @@ public class TesteLeituraScanner {
 		Scanner scanner = new Scanner(new File("contas.csv"));	
 		while (scanner.hasNextLine()) {
 			String linha = scanner.nextLine();
-//			System.out.println(linha);
+			System.out.println(linha);
 
 			Scanner linhaScanner = new Scanner(linha);
 			linhaScanner.useLocale(Locale.US);

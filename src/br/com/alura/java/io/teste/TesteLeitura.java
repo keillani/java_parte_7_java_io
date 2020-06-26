@@ -16,6 +16,8 @@ public class TesteLeitura {
 		//fluxo de entrada com arquivo
 		InputStream fis = new FileInputStream("lorem.txt"); // criando fluxo concreto com arquivo
 		Reader isr = new InputStreamReader(fis); //melhorando dados binarios para caracteres
+//		Reader isr = new InputStreamReader(fis, "UTF-8"); //charset
+
 		BufferedReader br = new BufferedReader(isr); //leitura de linha
 		
 		String linha = br.readLine();
